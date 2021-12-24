@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>630</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidgetLayout">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelMain">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Доверительное управление имуществом</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <layout class="QGridLayout" name="LayoutData">
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBoxRisk">
+        <item>
+         <property name="text">
+          <string>Высокий</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Средний</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Низкий</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Консервативный</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelRisk">
+        <property name="text">
+         <string>Уровень риска</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBoxStrategy"/>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLineEdit" name="lineDuration"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="labelSrokDeystviya">
+        <property name="text">
+         <string>Срок действия</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelStrategy">
+        <property name="text">
+         <string>Стратегия</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="riskDetailButton">
+        <property name="text">
+         <string>Подробнее</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelSumInvest">
+        <property name="text">
+         <string>Сумма инвестирования</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineSumInvest"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="labelPercentDohod_2">
+        <property name="text">
+         <string>Ожидаемая доходность</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelMinSum_2">
+        <property name="text">
+         <string>Минимальная сумма</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="labelMinSumOutput">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="GraphicButton">
+        <property name="text">
+         <string>График</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="labelPercentDohod">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="ButtonConnect">
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Подключение к БД</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="AddButton">
+      <property name="text">
+       <string>ДОБАВИТЬ</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <layout class="QFormLayout" name="ClientLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="fioLabel">
+        <property name="text">
+         <string>ФИО</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="fioLine"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="emailLabel">
+        <property name="text">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="emailLine"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="phoneLabel">
+        <property name="text">
+         <string>Номер телефона</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="phoneLine"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="labelindicator">
+        <property name="text">
+         <string>Indicator</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="1">
+     <layout class="QGridLayout" name="LayoutConnDB">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineHost"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelUser">
+        <property name="text">
+         <string>user</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelHost">
+        <property name="text">
+         <string>localhost</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="linePass"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineUser"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineDataBase"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelPass">
+        <property name="text">
+         <string>password</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelDataBase">
+        <property name="text">
+         <string>database</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>630</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
